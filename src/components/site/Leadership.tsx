@@ -55,8 +55,8 @@ export function Leadership() {
         </ul>
 
         <div className="mt-20 grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
-          <Reveal className="min-w-0">
-            <div className="relative lg:sticky lg:top-28">
+          <div className="min-w-0 space-y-8">
+            <Reveal className="relative">
               <div className="absolute -inset-5 rounded-[2rem] bg-primary/15 blur-3xl" />
               <img
                 src={media.harriSuit}
@@ -66,17 +66,44 @@ export function Leadership() {
                 height={1920}
                 className="relative h-[26rem] w-full rounded-[1.75rem] border border-border object-cover object-top sm:h-[34rem]"
               />
-              <img
-                src={media.networking}
-                alt="Abstract network of connections over a night skyline"
-                loading="lazy"
-                width={1280}
-                height={800}
-                className="glass-panel absolute -right-3 -bottom-8 hidden h-32 w-48 rounded-2xl object-cover p-1 sm:block"
-                style={{ animation: "float-slow 12s ease-in-out infinite" }}
-              />
-            </div>
-          </Reveal>
+            </Reveal>
+            <Reveal delay={100}>
+              <div className="tilt-card glass-panel overflow-hidden rounded-2xl">
+                <img
+                  src={media.networking}
+                  alt="Abstract network of connections over a night skyline"
+                  loading="lazy"
+                  width={1280}
+                  height={800}
+                  className="h-40 w-full object-cover sm:h-48"
+                />
+                <div className="p-5">
+                  <p className="font-display text-sm font-bold">Networks compound</p>
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    Relationships built today become the pipeline of the next five years.
+                  </p>
+                </div>
+              </div>
+            </Reveal>
+            <Reveal delay={160}>
+              <div className="tilt-card glass-panel overflow-hidden rounded-2xl">
+                <img
+                  src={media.strategy}
+                  alt="Black chess pieces beside a rising red growth chart"
+                  loading="lazy"
+                  width={1280}
+                  height={800}
+                  className="h-40 w-full object-cover sm:h-48"
+                />
+                <div className="p-5">
+                  <p className="font-display text-sm font-bold">Strategy over noise</p>
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    Decisions made for the next decade of the business, not the next quarter.
+                  </p>
+                </div>
+              </div>
+            </Reveal>
+          </div>
 
           <div className="min-w-0">
             <Reveal>
@@ -96,25 +123,6 @@ export function Leadership() {
                 </Reveal>
               ))}
             </ol>
-
-            <Reveal delay={120} className="mt-6">
-              <div className="tilt-card glass-panel overflow-hidden rounded-2xl">
-                <img
-                  src={media.strategy}
-                  alt="Black chess pieces beside a rising red growth chart"
-                  loading="lazy"
-                  width={1280}
-                  height={800}
-                  className="h-40 w-full object-cover sm:h-52"
-                />
-                <div className="p-5">
-                  <p className="font-display text-sm font-bold">Strategy over noise</p>
-                  <p className="mt-1 text-sm text-muted-foreground">
-                    Decisions made for the next decade of the business, not the next quarter.
-                  </p>
-                </div>
-              </div>
-            </Reveal>
           </div>
         </div>
       </div>
