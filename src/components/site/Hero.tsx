@@ -92,7 +92,7 @@ export function Hero() {
             <div className="glass-panel relative overflow-hidden rounded-[2rem] p-2">
               <img
                 src={media.harriFormal}
-                alt="Mr. Harri Kumar, CEO of Hosting Baba, in a formal black suit"
+                alt="Mr. Harri Kumar, CEO of Hosting Baba, in formal business attire"
                 width={1280}
                 height={1707}
                 className="h-[26rem] w-full rounded-[1.6rem] object-cover object-top sm:h-[34rem]"
