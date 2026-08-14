@@ -87,7 +87,7 @@ export function HostingBaba() {
 
         <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => {
-            const Icon = icons[index % icons.length];
+            const Icon = icons[index % icons.length] ?? LayoutTemplate;
             return (
               <Reveal as="li" key={service.title} delay={(index % 3) * 70} className="min-w-0">
                 <a
