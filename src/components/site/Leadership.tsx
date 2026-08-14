@@ -59,7 +59,7 @@ export function Leadership() {
             <div className="relative lg:sticky lg:top-28">
               <div className="absolute -inset-5 rounded-[2rem] bg-primary/15 blur-3xl" />
               <img
-                src={media.harriFormal}
+                src={media.harriSuit}
                 alt="Harri Kumar at a professional business networking event"
                 loading="lazy"
                 width={1280}
