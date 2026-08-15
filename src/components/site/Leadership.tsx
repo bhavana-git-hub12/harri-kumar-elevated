@@ -26,7 +26,7 @@ export function Leadership() {
                   onClick={() => setOpen(isOpen ? null : area.title)}
                   aria-expanded={isOpen}
                   className={cn(
-                    "tilt-card glass-panel w-full rounded-2xl p-5 text-left",
+                    "tap-feedback tilt-card glass-panel w-full rounded-2xl p-5 text-left",
                     isOpen && "border-primary/50",
                   )}
                 >
@@ -68,7 +68,7 @@ export function Leadership() {
               />
             </Reveal>
             <Reveal delay={100}>
-              <div className="tilt-card glass-panel overflow-hidden rounded-2xl">
+              <div className="tap-feedback tilt-card glass-panel overflow-hidden rounded-2xl">
                 <img
                   src={media.networking}
                   alt="Abstract network of connections over a night skyline"
@@ -86,7 +86,7 @@ export function Leadership() {
               </div>
             </Reveal>
             <Reveal delay={160}>
-              <div className="tilt-card glass-panel overflow-hidden rounded-2xl">
+              <div className="tap-feedback tilt-card glass-panel overflow-hidden rounded-2xl">
                 <img
                   src={media.strategy}
                   alt="Black chess pieces beside a rising red growth chart"
@@ -115,7 +115,7 @@ export function Leadership() {
             <ol className="relative mt-8 border-l border-border pl-6">
               {journey.map((stage, index) => (
                 <Reveal as="li" key={stage.title} delay={index * 70} className="relative pb-8 last:pb-0">
-                  <span className="absolute -left-[1.9rem] top-1.5 grid h-4 w-4 place-items-center rounded-full bg-primary shadow-[0_0_0_5px_oklch(0.58_0.24_28/0.18)]" />
+                  <span className="absolute -left-[1.9rem] top-1.5 grid h-4 w-4 place-items-center rounded-full bg-primary shadow-[0_0_0_5px_oklch(0.8_0.145_85/0.18)]" />
                   <h4 className="font-display text-lg font-bold">{stage.title}</h4>
                   <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
                     {stage.detail}

@@ -11,10 +11,10 @@ const jbAreas = [
 
 export function Businesses() {
   return (
-    <section id="businesses" className="relative py-20 sm:py-24 lg:py-28">
+    <section id="work" className="relative py-20 sm:py-24 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal className="max-w-3xl">
-          <p className="text-xs tracking-[0.3em] text-primary uppercase">Businesses</p>
+          <p className="text-xs tracking-[0.3em] text-primary uppercase">Work & Ventures</p>
           <h2 className="mt-4 text-3xl font-extrabold sm:text-4xl lg:text-5xl">
             JB — Blue-Collar Job Seeker
           </h2>

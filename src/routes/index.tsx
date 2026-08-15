@@ -3,7 +3,7 @@ import { Backdrop } from "@/components/site/Backdrop";
 import { Nav } from "@/components/site/Nav";
 import { Hero } from "@/components/site/Hero";
 import { About } from "@/components/site/About";
-import { HostingBaba } from "@/components/site/HostingBaba";
+import { Services } from "@/components/site/Services";
 import { Businesses } from "@/components/site/Businesses";
 import { Leadership } from "@/components/site/Leadership";
 import { Connect } from "@/components/site/Connect";
@@ -35,7 +35,7 @@ function Index() {
       <main>
         <Hero />
         <About />
-        <HostingBaba />
+        <Services />
         <Businesses />
         <Leadership />
         <Connect />
