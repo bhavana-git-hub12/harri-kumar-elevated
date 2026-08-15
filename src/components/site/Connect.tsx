@@ -2,7 +2,7 @@ import { Facebook, Instagram, Linkedin, Youtube, ArrowUpRight } from "lucide-rea
 import type { LucideIcon } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { BrandLogo } from "./BrandLogo";
-import { HOSTING_BABA_URL, socials } from "@/lib/site-data";
+import { socials } from "@/lib/site-data";
 
 const iconMap: Record<string, LucideIcon> = {
   Instagram,
@@ -21,7 +21,9 @@ export function Connect() {
             Connect With Harri Kumar
           </h2>
           <p className="mt-4 leading-relaxed text-muted-foreground">
-            Follow the work, the ventures and the perspective behind Hosting Baba.
+            Whether you want to discuss a project, explore a collaboration or simply build a
+            professional relationship, the door is open. Follow the work, the ventures and the
+            thinking — then start a conversation.
           </p>
         </Reveal>
 
@@ -34,7 +36,7 @@ export function Connect() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="tilt-card group glass-panel flex items-center justify-between gap-4 rounded-2xl p-6"
+                  className="tap-feedback tilt-card group glass-panel flex items-center justify-between gap-4 rounded-2xl p-6"
                 >
                   <span className="flex min-w-0 items-center gap-4">
                     <span className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-primary/15 text-primary transition-all duration-500 group-hover:scale-110 group-hover:bg-primary group-hover:text-primary-foreground">
@@ -52,19 +54,19 @@ export function Connect() {
         <Reveal delay={140} className="mt-10">
           <div className="glass-panel grid gap-6 rounded-[1.75rem] p-8 sm:flex sm:items-center sm:justify-between sm:p-10">
             <div className="min-w-0">
-              <BrandLogo imgClassName="h-9" />
+              <BrandLogo size="md" />
               <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground">
-                For business enquiries, partnerships and digital projects, reach the team through
-                the official Hosting Baba website.
+                For business enquiries, partnerships, digital projects and workforce collaboration —
+                reach out directly through any of the channels above.
               </p>
             </div>
             <a
-              href={HOSTING_BABA_URL}
+              href={socials[3].href}
               target="_blank"
               rel="noopener noreferrer"
-              className="magnetic inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground shadow-[var(--shadow-lift)]"
+              className="tap-feedback magnetic inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-semibold tracking-wide text-primary-foreground uppercase shadow-[var(--shadow-lift)] hover:brightness-110"
             >
-              Visit Hosting Baba <ArrowUpRight className="h-4 w-4" />
+              Message on LinkedIn <ArrowUpRight className="h-4 w-4" />
             </a>
           </div>
         </Reveal>

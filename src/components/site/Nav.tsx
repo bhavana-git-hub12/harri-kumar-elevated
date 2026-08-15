@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { Menu, X, ExternalLink } from "lucide-react";
+import { Menu, X, ArrowUpRight } from "lucide-react";
 import { BrandLogo } from "./BrandLogo";
-import { HOSTING_BABA_URL, navLinks } from "@/lib/site-data";
+import { navLinks } from "@/lib/site-data";
 import { cn } from "@/lib/utils";
 
 export function Nav() {
@@ -42,7 +42,7 @@ export function Nav() {
     >
       <nav className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 sm:px-6 lg:px-8">
         <div className="flex min-w-0 items-center gap-3">
-          <BrandLogo imgClassName="h-7 sm:h-8" />
+          <BrandLogo size="sm" />
           <span className="hidden min-w-0 border-l border-border pl-3 text-xs tracking-[0.28em] text-muted-foreground uppercase sm:block">
             Harri Kumar
           </span>
@@ -54,8 +54,8 @@ export function Nav() {
               key={link.href}
               href={link.href}
               className={cn(
-                "relative rounded-full px-4 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground",
-                active === link.href && "text-foreground",
+                "tap-feedback relative rounded-full px-4 py-2 text-sm text-muted-foreground hover:text-primary active:text-primary",
+                active === link.href && "text-primary",
               )}
             >
               {link.label}
@@ -68,12 +68,10 @@ export function Nav() {
             </a>
           ))}
           <a
-            href={HOSTING_BABA_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="magnetic ml-2 inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-[var(--shadow-lift)]"
+            href="#connect"
+            className="tap-feedback magnetic ml-2 inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-[var(--shadow-lift)] hover:brightness-110"
           >
-            Visit Hosting Baba <ExternalLink className="h-4 w-4" />
+            Connect <ArrowUpRight className="h-4 w-4" />
           </a>
         </div>
 
@@ -82,7 +80,7 @@ export function Nav() {
           onClick={() => setOpen((value) => !value)}
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
-          className="glass-panel grid h-11 w-11 shrink-0 place-items-center rounded-xl lg:hidden"
+          className="tap-feedback glass-panel grid h-11 w-11 shrink-0 place-items-center rounded-xl active:text-primary lg:hidden"
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
@@ -100,18 +98,17 @@ export function Nav() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="block rounded-xl px-4 py-3 text-base text-foreground/90 transition-colors hover:bg-primary/10"
+              className="tap-feedback block rounded-xl px-4 py-3 text-base text-foreground/90 hover:bg-primary/10 hover:text-primary active:bg-primary/15 active:text-primary"
             >
               {link.label}
             </a>
           ))}
           <a
-            href={HOSTING_BABA_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-2 flex items-center justify-center gap-2 rounded-xl bg-primary px-4 py-3 text-base font-semibold text-primary-foreground"
+            href="#connect"
+            onClick={() => setOpen(false)}
+            className="tap-feedback mt-2 flex items-center justify-center gap-2 rounded-xl bg-primary px-4 py-3 text-base font-semibold text-primary-foreground"
           >
-            Visit Hosting Baba <ExternalLink className="h-4 w-4" />
+            Connect With Me <ArrowUpRight className="h-4 w-4" />
           </a>
         </div>
       </div>

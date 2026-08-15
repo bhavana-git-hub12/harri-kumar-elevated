@@ -3,15 +3,15 @@ import { Backdrop } from "@/components/site/Backdrop";
 import { Nav } from "@/components/site/Nav";
 import { Hero } from "@/components/site/Hero";
 import { About } from "@/components/site/About";
-import { HostingBaba } from "@/components/site/HostingBaba";
+import { Services } from "@/components/site/Services";
 import { Businesses } from "@/components/site/Businesses";
 import { Leadership } from "@/components/site/Leadership";
 import { Connect } from "@/components/site/Connect";
 import { Footer } from "@/components/site/Footer";
 
-const title = "Harri Kumar — CEO of Hosting Baba | Entrepreneur & Business Leader";
+const title = "Mr. Harri Kumar — Entrepreneur & Digital Business Leader";
 const description =
-  "Mr. Harri Kumar, CEO of Hosting Baba: entrepreneur, business strategist and digital business leader building digital solutions, workforce initiatives and lasting client relationships.";
+  "Mr. Harri Kumar: entrepreneur, business management professional and digital project leader building businesses, digital solutions and stronger professional communities.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -35,7 +35,7 @@ function Index() {
       <main>
         <Hero />
         <About />
-        <HostingBaba />
+        <Services />
         <Businesses />
         <Leadership />
         <Connect />

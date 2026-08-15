@@ -1,6 +1,5 @@
 import { Reveal } from "./Reveal";
-import { BrandLogo } from "./BrandLogo";
-import { HOSTING_BABA_URL, media } from "@/lib/site-data";
+import { media } from "@/lib/site-data";
 
 const pillars = [
   "Entrepreneurship",
@@ -36,19 +35,11 @@ export function About() {
                 height={1280}
                 className="relative h-[24rem] w-full rounded-[1.75rem] border border-border object-cover object-top sm:h-[30rem]"
               />
-              <div className="glass-panel absolute right-4 bottom-4 left-4 flex items-center gap-3 rounded-2xl px-4 py-3">
-                <BrandLogo imgClassName="h-6" />
-                <span className="text-xs text-muted-foreground">
-                  Founder-led leadership at{" "}
-                  <a
-                    href={HOSTING_BABA_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-semibold text-foreground underline decoration-primary underline-offset-4"
-                  >
-                    Hosting Baba
-                  </a>
-                </span>
+              <div className="glass-panel absolute right-4 bottom-4 left-4 rounded-2xl px-4 py-3">
+                <p className="font-display text-sm font-bold">Founder-led leadership</p>
+                <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
+                  Close to the client, close to the delivery, accountable for the result.
+                </p>
               </div>
             </div>
           </Reveal>
@@ -57,34 +48,40 @@ export function About() {
             <Reveal delay={80}>
               <p className="text-lg leading-relaxed text-foreground/90">
                 Harri Kumar builds businesses the way operators do — close to the client, close to
-                the delivery, and accountable for the result. As CEO of{" "}
-                <a
-                  href={HOSTING_BABA_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-semibold text-primary hover:underline"
-                >
-                  Hosting Baba
-                </a>
-                , he leads a digital and technology practice spanning websites, hosting, e-commerce
-                and performance marketing for businesses that need their digital presence to
+                the delivery, and accountable for the result. Over more than a decade he has moved
+                from hands-on entrepreneurship into business management and digital project
+                leadership, running a practice that spans websites, hosting, e-commerce and
+                performance marketing for organisations that need their digital presence to
                 actually produce revenue.
               </p>
             </Reveal>
             <Reveal delay={140}>
               <p className="leading-relaxed text-muted-foreground">
-                His work extends beyond technology. Through workforce and recruitment initiatives he
-                connects blue-collar job seekers with employers who need dependable people — a
-                practical, human side of business development that most digital founders never
-                touch. Alongside it, he invests heavily in professional networking, treating
-                relationships as long-term infrastructure rather than short-term lead generation.
+                His business management work covers the unglamorous essentials: strategic planning,
+                operations, hiring and team structure, budgeting and the daily decisions that
+                determine whether growth is sustainable. On the digital side he leads
+                transformation projects — mapping how a business actually works, then building the
+                platforms, integrations and reporting that make it faster, clearer and cheaper to
+                run.
               </p>
             </Reveal>
             <Reveal delay={200}>
               <p className="leading-relaxed text-muted-foreground">
-                What ties it together is a strategist's temperament: define the offer, build the
-                team, hold the standard, and grow through trust. Clients stay because delivery is
-                consistent; teams stay because direction is clear.
+                As a project leader he owns scope, timeline, risk and delivery, coordinating
+                designers, developers and stakeholders so commitments are met rather than
+                renegotiated. Beyond technology, workforce and recruitment initiatives connect
+                blue-collar job seekers with employers who need dependable people — a practical,
+                human side of business development that most digital founders never touch.
+              </p>
+            </Reveal>
+            <Reveal delay={230}>
+              <p className="leading-relaxed text-muted-foreground">
+                Networking and community building sit underneath all of it. He treats professional
+                relationships as long-term infrastructure, connecting entrepreneurs, opening
+                collaboration between businesses and strengthening the local business community. His
+                vision is straightforward: help businesses grow through disciplined strategy and
+                honest digital transformation, and build organisations designed to outlast their
+                founder.
               </p>
             </Reveal>
 
@@ -93,7 +90,7 @@ export function About() {
                 {pillars.map((pillar) => (
                   <li
                     key={pillar}
-                    className="glass-panel rounded-xl px-3 py-2.5 text-xs font-medium text-foreground/85 transition-colors hover:border-primary/50 sm:text-sm"
+                    className="tap-feedback glass-panel rounded-xl px-3 py-2.5 text-xs font-medium text-foreground/85 hover:border-primary/50 hover:text-primary sm:text-sm"
                   >
                     {pillar}
                   </li>
