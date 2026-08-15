@@ -41,7 +41,7 @@ export function BrandLogo({
         alt="Harri Kumar personal logo"
         width={720}
         height={1160}
-        className={cn("relative h-[78%] w-auto object-contain", imgClassName)}
+        className={cn("relative h-[88%] w-auto scale-110 object-contain", imgClassName)}
       />
     </a>
   );
