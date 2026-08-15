@@ -81,17 +81,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Official profile of Mr. Harri Kumar, CEO of Hosting Baba — entrepreneur, business strategist and digital business leader.",
+          "Mr. Harri Kumar, CEO of Hosting Baba: entrepreneur, business strategist and digital business leader building digital solutions, workforce initiatives and lasting client relationships.",
       },
       { name: "author", content: "Harri Kumar" },
       { property: "og:title", content: "Harri Kumar — CEO, Hosting Baba" },
       {
         property: "og:description",
         content:
-          "Official profile of Mr. Harri Kumar, CEO of Hosting Baba — entrepreneur, business strategist and digital business leader.",
+          "Mr. Harri Kumar, CEO of Hosting Baba: entrepreneur, business strategist and digital business leader building digital solutions, workforce initiatives and lasting client relationships.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Harri Kumar — CEO, Hosting Baba" },
+      { name: "twitter:description", content: "Mr. Harri Kumar, CEO of Hosting Baba: entrepreneur, business strategist and digital business leader building digital solutions, workforce initiatives and lasting client relationships." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/11da472de4c8f4df70629130ba636e09/id-preview-d2f3cfe6--d6b77c4c-20e1-4827-a1f4-985786b2bb38.lovable.app-1786716724741.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/11da472de4c8f4df70629130ba636e09/id-preview-d2f3cfe6--d6b77c4c-20e1-4827-a1f4-985786b2bb38.lovable.app-1786716724741.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
