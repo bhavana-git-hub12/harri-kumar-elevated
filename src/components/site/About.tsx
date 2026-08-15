@@ -1,6 +1,5 @@
 import { Reveal } from "./Reveal";
-import { BrandLogo } from "./BrandLogo";
-import { HOSTING_BABA_URL, media } from "@/lib/site-data";
+import { media } from "@/lib/site-data";
 
 const pillars = [
   "Entrepreneurship",
@@ -36,19 +35,11 @@ export function About() {
                 height={1280}
                 className="relative h-[24rem] w-full rounded-[1.75rem] border border-border object-cover object-top sm:h-[30rem]"
               />
-              <div className="glass-panel absolute right-4 bottom-4 left-4 flex items-center gap-3 rounded-2xl px-4 py-3">
-                <BrandLogo imgClassName="h-6" />
-                <span className="text-xs text-muted-foreground">
-                  Founder-led leadership at{" "}
-                  <a
-                    href={HOSTING_BABA_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-semibold text-foreground underline decoration-primary underline-offset-4"
-                  >
-                    Hosting Baba
-                  </a>
-                </span>
+              <div className="glass-panel absolute right-4 bottom-4 left-4 rounded-2xl px-4 py-3">
+                <p className="font-display text-sm font-bold">Founder-led leadership</p>
+                <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
+                  Close to the client, close to the delivery, accountable for the result.
+                </p>
               </div>
             </div>
           </Reveal>
