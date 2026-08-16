@@ -1,7 +1,6 @@
 import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { BrandLogo } from "./BrandLogo";
-import { BrandPair } from "./BrandPair";
 import { navLinks, socials } from "@/lib/site-data";
 
 const iconMap: Record<string, LucideIcon> = {
@@ -14,9 +13,6 @@ const iconMap: Record<string, LucideIcon> = {
 export function Footer() {
   return (
     <footer className="relative border-t border-border pt-14 pb-10">
-      <div className="mx-auto mb-12 max-w-4xl px-4 sm:px-6 lg:px-8">
-        <BrandPair />
-      </div>
       <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.2fr_0.8fr_0.8fr] lg:px-8">
         <div className="min-w-0">
           <BrandLogo size="lg" />
