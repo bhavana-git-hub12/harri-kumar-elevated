@@ -1,5 +1,5 @@
 import goldLogo from "@/assets/gold-logo.png.asset.json";
-import companyLogo from "@/assets/company-logo.png.asset.json";
+import companyLogo from "@/assets/web-hosting-baba-logo.png.asset.json";
 import harriSuit from "@/assets/harri-suit.jpg.asset.json";
 import harriFormal from "@/assets/harri-formal.jpg.asset.json";
 import harriLifestyle from "@/assets/harri-lifestyle.jpg.asset.json";

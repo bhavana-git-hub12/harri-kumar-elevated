@@ -267,6 +267,16 @@
     color 0.15s ease,
     box-shadow 0.2s ease,
     transform 0.2s cubic-bezier(0.2, 0.7, 0.3, 1);
+  &:hover:not(.bg-primary) {
+    color: oklch(0.86 0.13 88);
+    border-color: oklch(0.8 0.145 85 / 55%);
+  }
+  &:focus-visible {
+    outline: none;
+    box-shadow:
+      0 0 0 2px oklch(0.8 0.145 85 / 55%),
+      0 0 30px -8px oklch(0.8 0.145 85 / 65%);
+  }
   &:active {
     transform: scale(0.97);
     border-color: oklch(0.8 0.145 85 / 70%);
