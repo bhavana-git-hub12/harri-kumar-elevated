@@ -2,7 +2,6 @@ import { Facebook, Instagram, Linkedin, Youtube, ArrowUpRight } from "lucide-rea
 import type { LucideIcon } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { BrandLogo } from "./BrandLogo";
-import { BrandPair } from "./BrandPair";
 import { socials } from "@/lib/site-data";
 
 const iconMap: Record<string, LucideIcon> = {
@@ -27,8 +26,6 @@ export function Connect() {
             thinking — then start a conversation.
           </p>
         </Reveal>
-
-        <BrandPair className="mt-10" />
 
         <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {socials.map((social, index) => {
