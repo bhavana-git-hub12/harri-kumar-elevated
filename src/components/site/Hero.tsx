@@ -81,6 +81,18 @@ export function Hero() {
           </div>
 
           <Stats className="mt-10 grid max-w-xl grid-cols-3 gap-4 border-t border-border pt-7" />
+
+          <div className="mt-8 flex items-center gap-4 border-t border-border pt-6">
+            <span className="text-[0.6rem] tracking-[0.28em] text-muted-foreground uppercase">
+              Founder of
+            </span>
+            <img
+              src={media.companyLogo}
+              alt="Web Hosting Baba company logo"
+              loading="lazy"
+              className="h-7 w-auto rounded-[3px] object-contain opacity-80 transition-all duration-300 hover:opacity-100 sm:h-8"
+            />
+          </div>
         </div>
 
         <div className="relative min-w-0">
