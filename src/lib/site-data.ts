@@ -1,4 +1,5 @@
 import goldLogo from "@/assets/gold-logo.png.asset.json";
+import companyLogo from "@/assets/company-logo.png.asset.json";
 import harriSuit from "@/assets/harri-suit.jpg.asset.json";
 import harriFormal from "@/assets/harri-formal.jpg.asset.json";
 import harriLifestyle from "@/assets/harri-lifestyle.jpg.asset.json";
@@ -9,6 +10,7 @@ import strategy from "@/assets/strategy.jpg";
 
 export const media = {
   logo: goldLogo.url,
+  companyLogo: companyLogo.url,
   harriSuit: harriSuit.url,
   harriFormal: harriFormal.url,
   harriLifestyle: harriLifestyle.url,
