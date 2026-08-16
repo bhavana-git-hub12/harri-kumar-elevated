@@ -2,6 +2,7 @@ import { Facebook, Instagram, Linkedin, Youtube, ArrowUpRight } from "lucide-rea
 import type { LucideIcon } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { BrandLogo } from "./BrandLogo";
+import { BrandPair } from "./BrandPair";
 import { socials } from "@/lib/site-data";
 
 const iconMap: Record<string, LucideIcon> = {
