@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, Youtube, ArrowUpRight, type LucideIcon } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Youtube, ArrowUpRight } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { BrandLogo } from "./BrandLogo";
 import { ContactForm } from "./ContactForm";
