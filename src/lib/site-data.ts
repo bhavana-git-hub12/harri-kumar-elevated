@@ -249,6 +249,7 @@ export const socials = [
   { label: "Facebook", href: "https://www.facebook.com/harriborntowin/" },
   { label: "YouTube", href: "https://www.youtube.com/@harrikumar5998" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/harri-kumar-6351b140/" },
+  { label: "WhatsApp", href: "https://wa.me/919341873532" },
 ] as const;
 
 export const navLinks = [
