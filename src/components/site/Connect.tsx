@@ -2,7 +2,8 @@ import { Facebook, Instagram, Linkedin, Youtube, ArrowUpRight } from "lucide-rea
 import type { LucideIcon } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { BrandLogo } from "./BrandLogo";
-import { socials } from "@/lib/site-data";
+import { ContactForm } from "./ContactForm";
+import { media, socials } from "@/lib/site-data";
 
 const iconMap: Record<string, LucideIcon> = {
   Instagram,
@@ -55,6 +56,12 @@ export function Connect() {
           <div className="glass-panel grid gap-6 rounded-[1.75rem] p-8 sm:flex sm:items-center sm:justify-between sm:p-10">
             <div className="min-w-0">
               <BrandLogo size="md" />
+              <img
+                src={media.companyLogo}
+                alt="Web Hosting Baba company logo"
+                loading="lazy"
+                className="mt-5 h-8 w-auto rounded-[3px] object-contain opacity-85 transition-all duration-300 hover:opacity-100 sm:h-9"
+              />
               <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground">
                 For business enquiries, partnerships, digital projects and workforce collaboration —
                 reach out directly through any of the channels above.
@@ -71,6 +78,7 @@ export function Connect() {
           </div>
         </Reveal>
       </div>
+      <ContactForm />
     </section>
   );
 }
