@@ -15,7 +15,7 @@ const WhatsAppIcon: LucideIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
-const iconMap: Record<string, LucideIcon> = {
+const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Instagram,
   Facebook,
   YouTube: Youtube,
