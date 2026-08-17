@@ -42,7 +42,7 @@ const expertiseIcons: LucideIcon[] = [Target, Rocket, Users, Network];
 
 export function Services() {
   return (
-    <section id="services" className="relative py-20 sm:py-24 lg:py-28">
+    <section id="services" className="relative py-14 sm:py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="glass-panel relative overflow-hidden rounded-[2rem]">
           <img
@@ -72,7 +72,7 @@ export function Services() {
                   (item) => (
                     <div
                       key={item}
-                      className="tap-feedback tilt-card glass-panel rounded-xl px-3 py-4 text-center text-xs font-semibold sm:text-sm"
+                      className="tap-feedback lux-card rounded-xl px-3 py-4 text-center text-xs font-semibold sm:text-sm"
                     >
                       {item}
                     </div>
@@ -83,12 +83,12 @@ export function Services() {
           </div>
         </div>
 
-        <ul className="mt-10 grid gap-5 lg:grid-cols-2">
+        <ul className="mt-8 grid gap-5 lg:grid-cols-2">
           {expertise.map((item, index) => {
             const Icon = expertiseIcons[index % expertiseIcons.length] ?? Target;
             return (
               <Reveal as="li" key={item.title} delay={(index % 2) * 90} className="min-w-0">
-                <article className="tap-feedback tilt-card glass-panel h-full rounded-2xl p-6 sm:p-8">
+                <article className="tap-feedback lux-card h-full rounded-2xl p-6 sm:p-8">
                   <span className="grid h-12 w-12 place-items-center rounded-xl bg-primary/15 text-primary">
                     <Icon className="h-5 w-5" />
                   </span>

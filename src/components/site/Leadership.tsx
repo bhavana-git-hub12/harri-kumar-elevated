@@ -7,7 +7,7 @@ export function Leadership() {
   const [open, setOpen] = useState<string | null>(areas[0].title);
 
   return (
-    <section id="leadership" className="relative py-20 sm:py-24 lg:py-28">
+    <section id="leadership" className="relative py-14 sm:py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal className="max-w-3xl">
           <p className="text-xs tracking-[0.3em] text-primary uppercase">Leadership</p>
@@ -16,7 +16,7 @@ export function Leadership() {
           </h2>
         </Reveal>
 
-        <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {areas.map((area, index) => {
             const isOpen = open === area.title;
             return (
@@ -26,7 +26,7 @@ export function Leadership() {
                   onClick={() => setOpen(isOpen ? null : area.title)}
                   aria-expanded={isOpen}
                   className={cn(
-                    "tap-feedback tilt-card glass-panel w-full rounded-2xl p-5 text-left",
+                    "tap-feedback lux-card w-full rounded-2xl p-5 text-left",
                     isOpen && "border-primary/50",
                   )}
                 >
@@ -68,7 +68,7 @@ export function Leadership() {
               />
             </Reveal>
             <Reveal delay={100}>
-              <div className="tap-feedback tilt-card glass-panel overflow-hidden rounded-2xl">
+              <div className="tap-feedback lux-card overflow-hidden rounded-2xl">
                 <img
                   src={media.networking}
                   alt="Abstract network of connections over a night skyline"
@@ -86,7 +86,7 @@ export function Leadership() {
               </div>
             </Reveal>
             <Reveal delay={160}>
-              <div className="tap-feedback tilt-card glass-panel overflow-hidden rounded-2xl">
+              <div className="tap-feedback lux-card overflow-hidden rounded-2xl">
                 <img
                   src={media.strategy}
                   alt="Black chess pieces beside a rising red growth chart"

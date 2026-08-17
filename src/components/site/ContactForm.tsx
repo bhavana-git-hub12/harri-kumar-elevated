@@ -38,7 +38,7 @@ export function ContactForm() {
   }
 
   return (
-    <section id="contact" className="relative py-20 sm:py-24">
+    <section id="contact" className="relative py-12 sm:py-16">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <Reveal className="text-center">
           <p className="text-xs tracking-[0.3em] text-primary uppercase">Contact</p>

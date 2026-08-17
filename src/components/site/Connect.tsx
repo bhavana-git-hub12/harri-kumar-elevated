@@ -25,7 +25,7 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 
 export function Connect() {
   return (
-    <section id="connect" className="relative py-20 sm:py-24 lg:py-28">
+    <section id="connect" className="relative py-14 sm:py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal className="max-w-2xl">
           <p className="text-xs tracking-[0.3em] text-primary uppercase">Connect</p>
@@ -39,7 +39,7 @@ export function Connect() {
           </p>
         </Reveal>
 
-        <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {socials.map((social, index) => {
             const Icon = iconMap[social.label] ?? Instagram;
             return (
