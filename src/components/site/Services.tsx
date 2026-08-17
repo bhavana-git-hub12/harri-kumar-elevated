@@ -42,7 +42,7 @@ const expertiseIcons: LucideIcon[] = [Target, Rocket, Users, Network];
 
 export function Services() {
   return (
-    <section id="services" className="relative py-20 sm:py-24 lg:py-28">
+    <section id="services" className="relative py-14 sm:py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="glass-panel relative overflow-hidden rounded-[2rem]">
           <img

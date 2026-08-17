@@ -11,7 +11,7 @@ const jbAreas = [
 
 export function Businesses() {
   return (
-    <section id="work" className="relative py-20 sm:py-24 lg:py-28">
+    <section id="work" className="relative py-14 sm:py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal className="max-w-3xl">
           <p className="text-xs tracking-[0.3em] text-primary uppercase">Work & Ventures</p>
@@ -25,7 +25,7 @@ export function Businesses() {
           </p>
         </Reveal>
 
-        <div className="mt-12 grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+        <div className="mt-9 grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <Reveal className="min-w-0">
             <div className="relative overflow-hidden rounded-[1.75rem] border border-border">
               <img

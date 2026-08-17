@@ -25,7 +25,7 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 
 export function Connect() {
   return (
-    <section id="connect" className="relative py-20 sm:py-24 lg:py-28">
+    <section id="connect" className="relative py-14 sm:py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal className="max-w-2xl">
           <p className="text-xs tracking-[0.3em] text-primary uppercase">Connect</p>
