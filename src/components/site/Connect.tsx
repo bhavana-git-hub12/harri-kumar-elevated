@@ -4,7 +4,7 @@ import { BrandLogo } from "./BrandLogo";
 import { ContactForm } from "./ContactForm";
 import { media, socials } from "@/lib/site-data";
 
-const WhatsAppIcon: LucideIcon = ({ className }: { className?: string }) => (
+const WhatsAppIcon = ({ className }: { className?: string }) => (
   <svg
     viewBox="0 0 24 24"
     fill="currentColor"
