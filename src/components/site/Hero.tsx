@@ -40,6 +40,18 @@ export function Hero() {
             </span>
           </div>
 
+          <div className="mt-5 flex items-center gap-4">
+            <span className="text-[0.6rem] tracking-[0.28em] text-muted-foreground uppercase">
+              Founder of
+            </span>
+            <img
+              src={media.companyLogo}
+              alt="Web Hosting Baba company logo"
+              loading="lazy"
+              className="h-7 w-auto rounded-[3px] object-contain opacity-85 transition-all duration-300 hover:opacity-100 sm:h-8"
+            />
+          </div>
+
           <h1 className="mt-7 font-display text-4xl leading-[1.05] font-extrabold sm:text-5xl lg:text-6xl">
             Mr. Harri Kumar
           </h1>
@@ -64,6 +76,18 @@ export function Hero() {
             community and business networking — connecting entrepreneurs, employers and
             professionals into relationships that create long-term commercial opportunity.
           </p>
+          <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground">
+            As the founder of Web Hosting Baba, he leads a digital services ecosystem covering web
+            design and development, hosting, domains, e-commerce, SEO and digital marketing —
+            helping businesses move from scattered offline processes to reliable, measurable digital
+            systems.
+          </p>
+          <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground">
+            Alongside his ventures, he invests heavily in people: mentoring young entrepreneurs,
+            building referral-driven business communities and creating employment pathways through
+            workforce and recruitment initiatives. His approach is simple — deliver what was
+            promised, build relationships that last, and let results speak first.
+          </p>
 
           <div className="mt-9 flex flex-wrap gap-3">
             <a
@@ -81,18 +105,6 @@ export function Hero() {
           </div>
 
           <Stats className="mt-10 grid max-w-xl grid-cols-3 gap-4 border-t border-border pt-7" />
-
-          <div className="mt-8 flex items-center gap-4 border-t border-border pt-6">
-            <span className="text-[0.6rem] tracking-[0.28em] text-muted-foreground uppercase">
-              Founder of
-            </span>
-            <img
-              src={media.companyLogo}
-              alt="Web Hosting Baba company logo"
-              loading="lazy"
-              className="h-7 w-auto rounded-[3px] object-contain opacity-80 transition-all duration-300 hover:opacity-100 sm:h-8"
-            />
-          </div>
         </div>
 
         <div className="relative min-w-0">
