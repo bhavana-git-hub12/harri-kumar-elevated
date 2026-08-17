@@ -52,7 +52,7 @@ export function Hero() {
             />
           </div>
 
-          <h1 className="mt-7 font-display text-4xl leading-[1.05] font-extrabold sm:text-5xl lg:text-6xl">
+          <h1 className="mt-6 font-display text-4xl leading-[1.02] font-extrabold tracking-tight sm:text-5xl lg:text-[4.2rem]">
             Mr. Harri Kumar
           </h1>
 
@@ -60,12 +60,12 @@ export function Hero() {
             {heroSubtitle}
           </p>
 
-          <p className="mt-7 max-w-2xl font-display text-2xl leading-tight font-bold sm:text-3xl lg:text-4xl">
+          <p className="mt-5 max-w-2xl font-display text-2xl leading-tight font-bold sm:text-3xl lg:text-4xl">
             <span className="text-gradient-red">Building Businesses, Digital Solutions</span>
             <span className="block">&amp; Stronger Communities.</span>
           </p>
 
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
+          <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
             Entrepreneur, business management professional and digital project leader with 12+ years
             of experience building businesses, managing teams, delivering digital projects and
             creating meaningful business networks.
@@ -113,15 +113,16 @@ export function Hero() {
             className="relative mx-auto max-w-md transition-transform duration-500 ease-out will-change-transform"
             style={{ perspective: "1400px" }}
           >
-            <div className="absolute -inset-6 rounded-[2.5rem] bg-primary/15 blur-3xl" />
-            <div className="glass-panel relative overflow-hidden rounded-[2rem] p-2">
+            <div className="absolute -inset-6 rounded-[2.2rem] bg-primary/18 blur-3xl" />
+            <div className="glass-panel relative overflow-hidden rounded-[1.5rem] p-2 ring-1 ring-primary/25">
               <img
                 src={media.harriFormal}
                 alt="Mr. Harri Kumar, entrepreneur and digital business leader, in formal business attire"
                 width={1280}
                 height={1707}
-                className="h-[26rem] w-full rounded-[1.6rem] object-cover object-top sm:h-[34rem]"
+                className="h-[24rem] w-full rounded-[1.1rem] object-cover object-top sm:h-[32rem]"
               />
+              <span className="pointer-events-none absolute inset-2 rounded-[1.1rem] bg-[linear-gradient(180deg,transparent_45%,oklch(0.11_0.006_265/0.55))]" />
               <span
                 className="pointer-events-none absolute inset-y-0 -left-1/3 w-1/3 bg-gradient-to-r from-transparent via-white/12 to-transparent"
                 style={{ animation: "sheen 6s ease-in-out infinite" }}
