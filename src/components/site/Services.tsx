@@ -72,7 +72,7 @@ export function Services() {
                   (item) => (
                     <div
                       key={item}
-                      className="tap-feedback tilt-card glass-panel rounded-xl px-3 py-4 text-center text-xs font-semibold sm:text-sm"
+                      className="tap-feedback lux-card rounded-xl px-3 py-4 text-center text-xs font-semibold sm:text-sm"
                     >
                       {item}
                     </div>
@@ -88,7 +88,7 @@ export function Services() {
             const Icon = expertiseIcons[index % expertiseIcons.length] ?? Target;
             return (
               <Reveal as="li" key={item.title} delay={(index % 2) * 90} className="min-w-0">
-                <article className="tap-feedback tilt-card glass-panel h-full rounded-2xl p-6 sm:p-8">
+                <article className="tap-feedback lux-card h-full rounded-2xl p-6 sm:p-8">
                   <span className="grid h-12 w-12 place-items-center rounded-xl bg-primary/15 text-primary">
                     <Icon className="h-5 w-5" />
                   </span>

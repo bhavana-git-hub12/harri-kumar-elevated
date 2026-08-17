@@ -26,7 +26,7 @@ export function Leadership() {
                   onClick={() => setOpen(isOpen ? null : area.title)}
                   aria-expanded={isOpen}
                   className={cn(
-                    "tap-feedback tilt-card glass-panel w-full rounded-2xl p-5 text-left",
+                    "tap-feedback lux-card w-full rounded-2xl p-5 text-left",
                     isOpen && "border-primary/50",
                   )}
                 >
@@ -68,7 +68,7 @@ export function Leadership() {
               />
             </Reveal>
             <Reveal delay={100}>
-              <div className="tap-feedback tilt-card glass-panel overflow-hidden rounded-2xl">
+              <div className="tap-feedback lux-card overflow-hidden rounded-2xl">
                 <img
                   src={media.networking}
                   alt="Abstract network of connections over a night skyline"
@@ -86,7 +86,7 @@ export function Leadership() {
               </div>
             </Reveal>
             <Reveal delay={160}>
-              <div className="tap-feedback tilt-card glass-panel overflow-hidden rounded-2xl">
+              <div className="tap-feedback lux-card overflow-hidden rounded-2xl">
                 <img
                   src={media.strategy}
                   alt="Black chess pieces beside a rising red growth chart"
