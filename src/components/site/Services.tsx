@@ -83,7 +83,7 @@ export function Services() {
           </div>
         </div>
 
-        <ul className="mt-10 grid gap-5 lg:grid-cols-2">
+        <ul className="mt-8 grid gap-5 lg:grid-cols-2">
           {expertise.map((item, index) => {
             const Icon = expertiseIcons[index % expertiseIcons.length] ?? Target;
             return (

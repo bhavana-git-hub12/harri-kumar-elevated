@@ -104,7 +104,7 @@ export function Hero() {
             </a>
           </div>
 
-          <Stats className="mt-10 grid max-w-xl grid-cols-3 gap-4 border-t border-border pt-7" />
+          <Stats className="mt-8 grid max-w-xl grid-cols-3 gap-4 border-t border-border pt-7" />
         </div>
 
         <div className="relative min-w-0">

@@ -39,7 +39,7 @@ export function Connect() {
           </p>
         </Reveal>
 
-        <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {socials.map((social, index) => {
             const Icon = iconMap[social.label] ?? Instagram;
             return (

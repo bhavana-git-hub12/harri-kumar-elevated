@@ -16,7 +16,7 @@ export function Leadership() {
           </h2>
         </Reveal>
 
-        <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {areas.map((area, index) => {
             const isOpen = open === area.title;
             return (

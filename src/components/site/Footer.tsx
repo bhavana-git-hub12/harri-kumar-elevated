@@ -67,7 +67,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="mx-auto mt-12 max-w-7xl border-t border-border px-4 pt-6 text-xs text-muted-foreground sm:px-6 lg:px-8">
+      <div className="mx-auto mt-8 max-w-7xl border-t border-border px-4 pt-6 text-xs text-muted-foreground sm:px-6 lg:px-8">
         © {new Date().getFullYear()} Mr. Harri Kumar. All rights reserved.
       </div>
     </footer>
