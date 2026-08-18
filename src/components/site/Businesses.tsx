@@ -16,7 +16,7 @@ export function Businesses() {
         <Reveal className="max-w-3xl">
           <p className="text-xs tracking-[0.3em] text-primary uppercase">Work & Ventures</p>
           <h2 className="mt-3 text-3xl font-extrabold sm:text-4xl lg:text-[2.9rem]">
-            JB — <span className="text-gradient-red">Blue-Collar Job Seeker</span>
+            JB – Job Beku — <span className="text-gradient-red">Blue-Collar Job Seeker</span>
           </h2>
           <div className="mt-3 flex flex-wrap gap-2">
             {["Job Opportunities", "Hiring", "Placements"].map((chip) => (
@@ -74,7 +74,7 @@ export function Businesses() {
               <div className="lux-card rounded-xl p-6">
                 <h3 className="text-base font-bold">Recruitment & Career Opportunities</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  JB focuses on the workforce segment most digital platforms ignore — matching
+                  JB – Job Beku focuses on the workforce segment most digital platforms ignore — matching
                   skilled and semi-skilled candidates to employers, supporting them through
                   placement, and keeping the process transparent on both sides.
                 </p>

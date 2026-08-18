@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, Youtube, ArrowUpRight } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Youtube, ArrowUpRight, Phone } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { BrandLogo } from "./BrandLogo";
 import { ContactForm } from "./ContactForm";
@@ -77,6 +77,15 @@ export function Connect() {
                 For business enquiries, partnerships, digital projects and workforce collaboration —
                 reach out directly through any of the channels above.
               </p>
+              <a
+                href="tel:+919341873532"
+                className="tap-feedback group mt-5 inline-flex items-center gap-3 rounded-full border border-primary/40 bg-primary/10 px-5 py-3 text-sm font-semibold text-foreground hover:border-primary hover:text-primary"
+              >
+                <span className="grid h-8 w-8 place-items-center rounded-full bg-primary/20 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+                  <Phone className="h-4 w-4" />
+                </span>
+                +91 93418 73532
+              </a>
             </div>
             <a
               href={socials[3].href}

@@ -38,10 +38,10 @@ export function BrandLogo({
       <span className="pointer-events-none absolute inset-0 rounded-full bg-primary/25 opacity-0 blur-md transition-opacity duration-500 group-hover:opacity-100" />
       <img
         src={media.logo}
-        alt="Harri Kumar personal logo"
-        width={720}
-        height={1160}
-        className={cn("relative h-[88%] w-auto scale-110 object-contain", imgClassName)}
+        alt="HK — Harri Kumar brand logo"
+        width={1024}
+        height={1024}
+        className={cn("relative h-full w-full rounded-full object-cover", imgClassName)}
       />
     </a>
   );
