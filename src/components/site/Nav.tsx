@@ -37,7 +37,7 @@ export function Nav() {
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-500",
-        scrolled ? "glass-panel border-b border-border/60 py-2 shadow-[0_18px_50px_-30px_black]" : "py-4",
+        scrolled ? "glass-panel border-b border-border/60 py-2 shadow-[0_12px_36px_-28px_rgba(0,0,0,0.5)]" : "py-4",
       )}
     >
       <nav className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 sm:px-6 lg:px-8">
