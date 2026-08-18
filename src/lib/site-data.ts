@@ -1,4 +1,4 @@
-import goldLogo from "@/assets/gold-logo.png.asset.json";
+import hkLogo from "@/assets/hk-logo.png.asset.json";
 import companyLogo from "@/assets/web-hosting-baba-logo.png.asset.json";
 import harriSuit from "@/assets/harri-suit.jpg.asset.json";
 import harriFormal from "@/assets/harri-formal.jpg.asset.json";
@@ -9,7 +9,7 @@ import networking from "@/assets/networking.jpg";
 import strategy from "@/assets/strategy.jpg";
 
 export const media = {
-  logo: goldLogo.url,
+  logo: hkLogo.url,
   companyLogo: companyLogo.url,
   harriSuit: harriSuit.url,
   harriFormal: harriFormal.url,
@@ -246,7 +246,7 @@ export const journey = [
 
 export const socials = [
   { label: "Instagram", href: "https://www.instagram.com/harrikumargowda/" },
-  { label: "Facebook", href: "https://www.facebook.com/harriborntowin/" },
+  { label: "Facebook", href: "https://www.facebook.com/harrirockz/" },
   { label: "YouTube", href: "https://www.youtube.com/@harrikumar5998" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/harri-kumar-6351b140/" },
   { label: "WhatsApp", href: "https://wa.me/919341873532" },
