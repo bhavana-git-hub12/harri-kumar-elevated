@@ -27,7 +27,7 @@ export function BrandLogo({
       aria-label={label}
       className={cn(
         "group tap-feedback relative inline-grid shrink-0 place-items-center rounded-full",
-        "bg-[radial-gradient(circle_at_30%_20%,oklch(0.22_0.02_264),oklch(0.1_0.012_264))]",
+        "bg-[radial-gradient(circle_at_30%_20%,oklch(1_0_0),oklch(0.97_0_0))]",
         "gold-ring overflow-hidden transition-transform duration-500 hover:scale-105",
         "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring",
         sizes[size],
