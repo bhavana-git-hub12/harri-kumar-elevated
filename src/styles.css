@@ -12,6 +12,7 @@
   --color-brand: oklch(0.48 0.17 27);
   --color-crimson: oklch(0.43 0.16 27);
   --color-metal: oklch(0.55 0 0);
+  --color-jobblue: oklch(0.42 0.15 255);
 }
 
 /*
@@ -73,7 +74,7 @@
 
 :root {
   --radius: 0.9rem;
-  --background: oklch(1 0 0);
+  --background: oklch(0.995 0.001 250);
   --foreground: oklch(0 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0 0 0);
@@ -81,9 +82,9 @@
   --popover-foreground: oklch(0 0 0);
   --primary: oklch(0.48 0.17 27);
   --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.97 0 0);
+  --secondary: oklch(0.972 0.002 250);
   --secondary-foreground: oklch(0.15 0 0);
-  --muted: oklch(0.97 0 0);
+  --muted: oklch(0.972 0.002 250);
   --muted-foreground: oklch(0.42 0 0);
   --accent: oklch(0.48 0.17 27);
   --accent-foreground: oklch(1 0 0);
@@ -195,7 +196,9 @@
   position: relative;
   background: oklch(1 0 0);
   border: 1px solid oklch(0 0 0 / 10%);
-  box-shadow: 0 20px 45px -38px oklch(0 0 0 / 55%);
+  box-shadow:
+    0 1px 2px oklch(0 0 0 / 5%),
+    0 20px 45px -34px oklch(0 0 0 / 45%);
   transition:
     transform 0.35s cubic-bezier(0.2, 0.7, 0.3, 1),
     border-color 0.25s ease,
@@ -203,10 +206,16 @@
     background-color 0.25s ease;
   &:hover,
   &:active {
-    transform: translateY(-4px);
+    transform: perspective(1000px) translate3d(0, -5px, 0) scale(1.005);
     border-color: oklch(0.48 0.17 27 / 60%);
-    box-shadow: 0 24px 55px -38px oklch(0.48 0.17 27 / 55%);
+    box-shadow:
+      0 2px 4px oklch(0 0 0 / 6%),
+      0 28px 60px -34px oklch(0.48 0.17 27 / 50%);
   }
+}
+
+@utility text-job-blue {
+  color: oklch(0.42 0.15 255);
 }
 
 @utility text-gradient-red {
