@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react";
-import { Send, CheckCircle2 } from "lucide-react";
+import { Send, CheckCircle2, Phone } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 const serviceOptions = [
