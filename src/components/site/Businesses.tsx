@@ -16,7 +16,7 @@ export function Businesses() {
         <Reveal className="max-w-3xl">
           <p className="text-xs tracking-[0.3em] text-primary uppercase">Work & Ventures</p>
           <h2 className="mt-3 text-3xl font-extrabold sm:text-4xl lg:text-[2.9rem]">
-            <span className="text-job-blue break-words">JOB BEKU BLUE _COLLAR _JOB__SEEKER</span>
+            <span className="text-black break-words">JOB BEKU BLUE _COLLAR _JOB__SEEKER</span>
           </h2>
           <div className="mt-3 flex flex-wrap gap-2">
             {["Job Opportunities", "Hiring", "Placements"].map((chip) => (
