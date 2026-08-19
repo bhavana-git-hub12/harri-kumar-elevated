@@ -67,12 +67,6 @@ export function Nav() {
               />
             </a>
           ))}
-          <a
-            href="#connect"
-            className="tap-feedback magnetic ml-2 inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-[var(--shadow-lift)] hover:brightness-110"
-          >
-            Connect <ArrowUpRight className="h-4 w-4" />
-          </a>
         </div>
 
         <button

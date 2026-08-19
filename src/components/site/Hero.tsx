@@ -33,11 +33,8 @@ export function Hero() {
     <section id="home" className="relative overflow-hidden pt-24 pb-10 sm:pt-28 lg:pt-32 lg:pb-16">
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14 lg:px-8">
         <div className="reveal min-w-0" data-visible="true">
-          <div className="glass-panel inline-flex items-center gap-3 rounded-full py-1.5 pr-5 pl-1.5">
-            <BrandLogo size="sm" />
-            <span className="text-[0.7rem] tracking-[0.24em] text-muted-foreground uppercase">
-              Official Profile
-            </span>
+          <div className="glass-panel inline-flex items-center rounded-full p-2 shadow-[0_10px_30px_-22px_rgba(0,0,0,0.5)]">
+            <BrandLogo size="lg" imgClassName="object-contain" />
           </div>
 
           <div className="mt-5 flex items-center gap-4">
