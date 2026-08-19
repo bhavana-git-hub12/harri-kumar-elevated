@@ -1,10 +1,9 @@
 import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
-import type { LucideIcon } from "lucide-react";
 import { BrandLogo } from "./BrandLogo";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 import { navLinks, socials } from "@/lib/site-data";
 
-const iconMap: Record<string, LucideIcon | ((props: { className?: string }) => JSX.Element)> = {
+const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Instagram,
   Facebook,
   YouTube: Youtube,

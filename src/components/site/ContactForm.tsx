@@ -46,6 +46,13 @@ export function ContactForm() {
           <p className="mx-auto mt-4 max-w-xl leading-relaxed text-muted-foreground">
             For business enquiries, digital projects, partnerships and networking conversations.
           </p>
+          <a
+            href="tel:+919341873532"
+            className="tap-feedback magnetic mx-auto mt-5 inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/5 px-5 py-2.5 text-sm font-semibold text-foreground hover:border-primary hover:text-primary"
+          >
+            <Phone className="h-4 w-4 text-primary" />
+            Phone: 9341873532
+          </a>
         </Reveal>
 
         <Reveal delay={120} className="mt-10">
